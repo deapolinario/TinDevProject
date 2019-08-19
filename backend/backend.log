@@ -1,0 +1,330 @@
+yarn run v1.17.3
+$ nodemon src/server.js
+[33m[nodemon] 1.19.1[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node src/server.js`[39m
+5d598f22d9da306c77a15628 NEKPRFKm9zSb888DAAAA
+5d598d5f21656e55565939c3 BOIOGw6tYovJBgThAAAB
+5d5a8e2285901e2ba03b4121 LbiPbPH9SBDJD5ZZAAAC
+5d5a8e2e85901e2ba03b4122 JCyq5crtY0UnxDuwAAAD
+Server {
+  nsps:
+   { '/':
+      Namespace {
+        name: '/',
+        server: [Circular],
+        sockets: [Object],
+        connected: [Object],
+        fns: [],
+        ids: 0,
+        rooms: [],
+        flags: {},
+        adapter: [Adapter],
+        _events: [Object],
+        _eventsCount: 1 } },
+  parentNsps: Map {},
+  _path: '/socket.io',
+  _serveClient: true,
+  parser:
+   { protocol: 4,
+     types:
+      [ 'CONNECT',
+        'DISCONNECT',
+        'EVENT',
+        'ACK',
+        'ERROR',
+        'BINARY_EVENT',
+        'BINARY_ACK' ],
+     CONNECT: 0,
+     DISCONNECT: 1,
+     EVENT: 2,
+     ACK: 3,
+     ERROR: 4,
+     BINARY_EVENT: 5,
+     BINARY_ACK: 6,
+     Encoder: [Function: Encoder],
+     Decoder: [Function: Decoder] },
+  encoder: Encoder {},
+  _adapter: [Function: Adapter],
+  _origins: '*:*',
+  sockets:
+   Namespace {
+     name: '/',
+     server: [Circular],
+     sockets:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket] },
+     connected:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket] },
+     fns: [],
+     ids: 0,
+     rooms: [],
+     flags: {},
+     adapter:
+      Adapter {
+        nsp: [Circular],
+        rooms: [Object],
+        sids: [Object],
+        encoder: Encoder {} },
+     _events: [Object: null prototype] { connection: [Function] },
+     _eventsCount: 1 },
+  eio:
+   Server {
+     clients:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket] },
+     clientsCount: 3,
+     wsEngine: 'ws',
+     pingTimeout: 5000,
+     pingInterval: 25000,
+     upgradeTimeout: 10000,
+     maxHttpBufferSize: 100000000,
+     transports: [ 'polling', 'websocket' ],
+     allowUpgrades: true,
+     allowRequest: [Function: bound ],
+     cookie: 'io',
+     cookiePath: '/',
+     cookieHttpOnly: true,
+     perMessageDeflate: { threshold: 1024 },
+     httpCompression: { threshold: 1024 },
+     initialPacket: [ '0' ],
+     ws:
+      WebSocketServer {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        options: [Object] },
+     _events: [Object: null prototype] { connection: [Function: bound ] },
+     _eventsCount: 1 },
+  httpServer:
+   Server {
+     _events:
+      [Object: null prototype] {
+        connection: [Function: connectionListener],
+        close: [Function: bound ],
+        listening: [Function: bound ],
+        upgrade: [Function],
+        request: [Function] },
+     _eventsCount: 5,
+     _maxListeners: undefined,
+     _connections: 4,
+     _handle:
+      TCP {
+        reading: false,
+        onread: null,
+        onconnection: [Function: onconnection],
+        [Symbol(owner)]: [Circular] },
+     _usingWorkers: false,
+     _workers: [],
+     _unref: false,
+     allowHalfOpen: true,
+     pauseOnConnect: false,
+     httpAllowHalfOpen: false,
+     timeout: 120000,
+     keepAliveTimeout: 5000,
+     maxHeadersCount: null,
+     headersTimeout: 40000,
+     _connectionKey: '6::::3333',
+     [Symbol(IncomingMessage)]: { [Function: IncomingMessage] super_: [Function] },
+     [Symbol(ServerResponse)]: { [Function: ServerResponse] super_: [Function] },
+     [Symbol(asyncId)]: 7 },
+  engine:
+   Server {
+     clients:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket] },
+     clientsCount: 3,
+     wsEngine: 'ws',
+     pingTimeout: 5000,
+     pingInterval: 25000,
+     upgradeTimeout: 10000,
+     maxHttpBufferSize: 100000000,
+     transports: [ 'polling', 'websocket' ],
+     allowUpgrades: true,
+     allowRequest: [Function: bound ],
+     cookie: 'io',
+     cookiePath: '/',
+     cookieHttpOnly: true,
+     perMessageDeflate: { threshold: 1024 },
+     httpCompression: { threshold: 1024 },
+     initialPacket: [ '0' ],
+     ws:
+      WebSocketServer {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        options: [Object] },
+     _events: [Object: null prototype] { connection: [Function: bound ] },
+     _eventsCount: 1 } } { '5d598f22d9da306c77a15628': 'NEKPRFKm9zSb888DAAAA',
+  '5d598d5f21656e55565939c3': 'BOIOGw6tYovJBgThAAAB',
+  '5d5a8e2285901e2ba03b4121': 'LbiPbPH9SBDJD5ZZAAAC',
+  '5d5a8e2e85901e2ba03b4122': 'JCyq5crtY0UnxDuwAAAD' }
+5d5a8e2285901e2ba03b4121 -mWurk9E2_Krb40cAAAE
+Server {
+  nsps:
+   { '/':
+      Namespace {
+        name: '/',
+        server: [Circular],
+        sockets: [Object],
+        connected: [Object],
+        fns: [],
+        ids: 0,
+        rooms: [],
+        flags: {},
+        adapter: [Adapter],
+        _events: [Object],
+        _eventsCount: 1 } },
+  parentNsps: Map {},
+  _path: '/socket.io',
+  _serveClient: true,
+  parser:
+   { protocol: 4,
+     types:
+      [ 'CONNECT',
+        'DISCONNECT',
+        'EVENT',
+        'ACK',
+        'ERROR',
+        'BINARY_EVENT',
+        'BINARY_ACK' ],
+     CONNECT: 0,
+     DISCONNECT: 1,
+     EVENT: 2,
+     ACK: 3,
+     ERROR: 4,
+     BINARY_EVENT: 5,
+     BINARY_ACK: 6,
+     Encoder: [Function: Encoder],
+     Decoder: [Function: Decoder] },
+  encoder: Encoder {},
+  _adapter: [Function: Adapter],
+  _origins: '*:*',
+  sockets:
+   Namespace {
+     name: '/',
+     server: [Circular],
+     sockets:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket],
+        '-mWurk9E2_Krb40cAAAE': [Socket] },
+     connected:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket],
+        '-mWurk9E2_Krb40cAAAE': [Socket] },
+     fns: [],
+     ids: 0,
+     rooms: [],
+     flags: {},
+     adapter:
+      Adapter {
+        nsp: [Circular],
+        rooms: [Object],
+        sids: [Object],
+        encoder: Encoder {} },
+     _events: [Object: null prototype] { connection: [Function] },
+     _eventsCount: 1 },
+  eio:
+   Server {
+     clients:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket],
+        '-mWurk9E2_Krb40cAAAE': [Socket] },
+     clientsCount: 4,
+     wsEngine: 'ws',
+     pingTimeout: 5000,
+     pingInterval: 25000,
+     upgradeTimeout: 10000,
+     maxHttpBufferSize: 100000000,
+     transports: [ 'polling', 'websocket' ],
+     allowUpgrades: true,
+     allowRequest: [Function: bound ],
+     cookie: 'io',
+     cookiePath: '/',
+     cookieHttpOnly: true,
+     perMessageDeflate: { threshold: 1024 },
+     httpCompression: { threshold: 1024 },
+     initialPacket: [ '0' ],
+     ws:
+      WebSocketServer {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        options: [Object] },
+     _events: [Object: null prototype] { connection: [Function: bound ] },
+     _eventsCount: 1 },
+  httpServer:
+   Server {
+     _events:
+      [Object: null prototype] {
+        connection: [Function: connectionListener],
+        close: [Function: bound ],
+        listening: [Function: bound ],
+        upgrade: [Function],
+        request: [Function] },
+     _eventsCount: 5,
+     _maxListeners: undefined,
+     _connections: 5,
+     _handle:
+      TCP {
+        reading: false,
+        onread: null,
+        onconnection: [Function: onconnection],
+        [Symbol(owner)]: [Circular] },
+     _usingWorkers: false,
+     _workers: [],
+     _unref: false,
+     allowHalfOpen: true,
+     pauseOnConnect: false,
+     httpAllowHalfOpen: false,
+     timeout: 120000,
+     keepAliveTimeout: 5000,
+     maxHeadersCount: null,
+     headersTimeout: 40000,
+     _connectionKey: '6::::3333',
+     [Symbol(IncomingMessage)]: { [Function: IncomingMessage] super_: [Function] },
+     [Symbol(ServerResponse)]: { [Function: ServerResponse] super_: [Function] },
+     [Symbol(asyncId)]: 7 },
+  engine:
+   Server {
+     clients:
+      { BOIOGw6tYovJBgThAAAB: [Socket],
+        LbiPbPH9SBDJD5ZZAAAC: [Socket],
+        JCyq5crtY0UnxDuwAAAD: [Socket],
+        '-mWurk9E2_Krb40cAAAE': [Socket] },
+     clientsCount: 4,
+     wsEngine: 'ws',
+     pingTimeout: 5000,
+     pingInterval: 25000,
+     upgradeTimeout: 10000,
+     maxHttpBufferSize: 100000000,
+     transports: [ 'polling', 'websocket' ],
+     allowUpgrades: true,
+     allowRequest: [Function: bound ],
+     cookie: 'io',
+     cookiePath: '/',
+     cookieHttpOnly: true,
+     perMessageDeflate: { threshold: 1024 },
+     httpCompression: { threshold: 1024 },
+     initialPacket: [ '0' ],
+     ws:
+      WebSocketServer {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        options: [Object] },
+     _events: [Object: null prototype] { connection: [Function: bound ] },
+     _eventsCount: 1 } } { '5d598f22d9da306c77a15628': 'NEKPRFKm9zSb888DAAAA',
+  '5d598d5f21656e55565939c3': 'BOIOGw6tYovJBgThAAAB',
+  '5d5a8e2285901e2ba03b4121': '-mWurk9E2_Krb40cAAAE',
+  '5d5a8e2e85901e2ba03b4122': 'JCyq5crtY0UnxDuwAAAD' }
+DEU MATCH
