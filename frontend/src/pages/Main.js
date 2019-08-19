@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import io from 'socket.io-client'
 import { Link } from 'react-router-dom';
 
 import './Main.css';
@@ -24,6 +25,32 @@ export default function Main({ match }) {
     
     loadUsers();
   }, [match.params.id]);
+
+  useEffect(() => {
+    const socket = io('http://localhost:3333', {
+      query: { user: match.params.id }
+    });
+
+    socket.on('match', dev => {
+      console.log(dev);
+    })
+
+    //Realização de testes com o WebSocket
+    //
+    // socket.on('word', message => {
+    //   console.log(message);
+    // })
+
+    // setTimeout(() => {
+    //   socket.emit('Hello', {
+    //     message: 'Hello Word!!'
+    //   })
+    // }, 3000);
+  }, [match.params.id]);
+
+  
+
+
 
   async function handleLike(id) {
     await api.post(`/devs/${id}/likes`, null, {
