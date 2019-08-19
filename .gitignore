@@ -1,0 +1,4 @@
+# files to ignore
+
+backend/backend.log
+frontend/frontend.log
