@@ -1,4 +1,4 @@
 # files to ignore
-
+.vscode/*
 backend/backend.log
 frontend/frontend.log
