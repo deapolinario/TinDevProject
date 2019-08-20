@@ -8,10 +8,13 @@ import api from '../services/api';
 import logo from '../assets/logo.svg';
 import like from '../assets/like.svg';
 import dislike from '../assets/dislike.svg';
+import itsamatch from '../assets/itsamatch.png';
 
 
 export default function Main({ match }) {
   const [users, setUsers] = useState([]);
+  const [matchDev, setMatchDev] = useState(null);
+
 
   useEffect(() => {
     async function loadUsers() {
@@ -32,7 +35,7 @@ export default function Main({ match }) {
     });
 
     socket.on('match', dev => {
-      console.log(dev);
+      setMatchDev(dev);
     })
 
     //Realização de testes com o WebSocket
@@ -97,6 +100,17 @@ export default function Main({ match }) {
       ) : (
         <div className="empty">Acabou :(</div>
       ) }
+
+      { matchDev && (
+        <div className="match-container">
+          <img src={itsamatch} alt="It's a match"/>
+          <img className="avatar" src={matchDev.avatar} alt="avatar"/>
+          <strong>{matchDev.name}</strong>
+          <p>{matchDev.bio}</p>
+          <button type= "button" onClick={() => setMatchDev(null)}>CLOSE</button>
+        </div>
+
+      )}
     </div>
   )
 }

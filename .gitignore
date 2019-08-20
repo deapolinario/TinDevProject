@@ -2,3 +2,4 @@
 .vscode/*
 backend/backend.log
 frontend/frontend.log
+frontend/node_modules/*
