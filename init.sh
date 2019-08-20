@@ -11,7 +11,7 @@ start(){
 }
 
 stop(){
-  killall -9 node
+  killall -9 node >/dev/null 2>&1 &
 }
 
 CMD=$1
